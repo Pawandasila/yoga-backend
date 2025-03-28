@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/server.js"
+    }
+  ],
+  "env": {
+    "MONGODB_URI": "mongodb+srv://pawandasila06:9gEIOly4iGcywCth@cluster0.sb0iy.mongodb.net/yoga?retryWrites=true&w=majority&appName=Cluster0",
+    "CLOUDINARY_CLOUD_NAME": "dxlcaoneq",
+    "CLOUDINARY_API_KEY": "194621958231153",
+    "CLOUDINARY_API_SECRET": "RihEwpmXvaH6CM9uACo17Q6fOo4",
+    "JWT_SECRET": "LkjI3#u89_+nDk89Kj*12oPj7JKl(*&^%qwe0PQkl12xZ",
+    "SESSION_SECRET": "2d25b7f1e6d0b36e463cc48503cfec5919b07c482956701ea2436c0845095c0b90436f7b8867c5f5fa73652eecf76c2587042a817a910cf3fce78742a5fd3923",
+    "NODE_ENV": "production"
+  }
+}

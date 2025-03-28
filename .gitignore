@@ -35,3 +35,4 @@ uploads/
 *.crt
 *.csr
 *.pfx
+.vercel
